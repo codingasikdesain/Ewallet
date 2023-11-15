@@ -1,0 +1,216 @@
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--alice-color);
+      user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      padding: 0;
+      margin: 0;
+      animation: fade-in 2s linear;
+    }
+    .t-name h5{
+     font-weight: bold;
+     color: var(--my-color);
+    }
+    .box-details {
+      border-top: 5px solid var(--my-color);
+      border-radius: 15px !important;
+    }
+    .icon-detail {
+      text-align: center;
+      border-bottom: 3px dashed #f1f1f1;
+      padding-bottom: 7px;
+      margin-bottom: 5px;
+    }
+    .icon-detail img {
+      width: 60px;
+      border-radius: 100px;
+      background: white;
+      padding: 5px;
+      position: relative;
+      top: -25px;
+      border: 2px solid var(--my-color);
+    }
+
+    .icon-detail p {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--my-color);
+      margin-top: -20px;
+    }
+
+    .detail-pembelian {
+      background: var(--my-color);
+      padding: 15px;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .detail-pembelian h5 {
+      font-size: 14px;
+      font-weight: 500;
+      color: black;
+    }
+
+    .detail-pembelian p {
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 0px !important;
+    }
+
+    .nick-pelanggan {
+      display: flex;
+      position: relative;
+      align-items: center;
+      border: 2px solid var(--my-color);
+      border-radius: 5px;
+    }
+
+    .nick-pelanggan h5 {
+      margin: 0px;
+      font-size: 13px;
+      background: var(--my-color);
+      color: var(--white-color);
+      padding: 6px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    .nick-pelanggan p {
+      font-size: 13px !important;
+      margin: 0px !important;
+      padding: 4px;
+      padding-left: 7px;
+      font-weight: 600;
+      color: var(--my-color);
+      max-width: 170px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .contact i {
+      font-size: 25px;
+      color: var(--my-color);
+      margin-left: 8px;
+    }
+
+    .labeling {
+      margin-left: 40px;
+    }
+
+    #addon_pulsa img {
+      width: 35px;
+      margin-right: 5px;
+      border-radius: 10px;
+      background: var(--white-color);
+      padding: 5px;
+      margin-left: -5px;
+    }
+
+    /* navigation background */
+    .nav-pills .nav-item.show .nav-link,
+    .nav-pills .nav-link.active {
+      color: var(--white-color);
+      background: var(--my-color) !important;
+      border: none;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: var(--gray-color);
+      font-size: 12px;
+    }
+
+    .nav-pills {
+      background: var(--alice-color);
+    }
+
+    .nav {
+      background: var(--alice-color) !important;
+      border-radius: 10px;
+    }
+
+    #navig {
+      background: var(--white-color);
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+
+    .name {
+      font-size: 500;
+    }
+
+    .tag-produk {
+      text-align: left;
+      font-size: 12px;
+      color: gray;
+      margin: 0px;
+    }
+
+    .loading {
+      --speed-of-animation: 0.9s;
+      --gap: 6px;
+      --first-color: #4c86f9;
+      --second-color: #49a84c;
+      --third-color: #f6bb02;
+      --fourth-color: #f6bb02;
+      --fifth-color: #2196f3;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 6px;
+      z-index: 100000000;
+      z-index: 0;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .loading span {
+      z-index: 0;
+      width: 6px;
+      height: 50px;
+      position: relative;
+      background: var(--first-color);
+      animation: scale var(--speed-of-animation) ease-in-out infinite;
+    }
+
+    .loading span:nth-child(2) {
+      background: var(--second-color);
+      animation-delay: -0.8s;
+    }
+
+    .loading span:nth-child(3) {
+      background: var(--third-color);
+      animation-delay: -0.7s;
+    }
+
+    .loading span:nth-child(4) {
+      background: var(--fourth-color);
+      animation-delay: -0.6s;
+    }
+
+    .loading span:nth-child(5) {
+      background: var(--fifth-color);
+      animation-delay: -0.5s;
+    }
+
+    @keyframes scale {
+
+      0%,
+      40%,
+      100% {
+        transform: scaleY(0.05);
+      }
+
+      20% {
+        transform: scaleY(1);
+      }
+    }
